@@ -1,13 +1,15 @@
 <?php
-$genericInt = "int(11) NOT NULL DEFAULT '0'";
-$smallerInt = "int(8) NOT NULL DEFAULT '0'";
+$hugeInt = "bigint(20) NOT NULL DEFAULT '0'";
+$genericInt = "bigint(11) NOT NULL DEFAULT '0'";
+$smallerInt = "bigint(8) NOT NULL DEFAULT '0'";
 $bool = "tinyint(1) NOT NULL DEFAULT '0'";
 $notNull = " NOT NULL DEFAULT ''";
 $text = "text DEFAULT ''"; //NOT NULL breaks in certain versions/settings.
-$var128 = "varchar(128)".$notNull;
-$var256 = "varchar(256)".$notNull;
-$var1024 = "varchar(1024)".$notNull;
-$AI = "int(11) NOT NULL AUTO_INCREMENT";
+$postText = "mediumtext DEFAULT ''";
+$var128 = "varchar(96)".$notNull;
+$var256 = "varchar(191)".$notNull;
+$var1024 = "varchar(767)".$notNull;
+$AI = "bigint(11) NOT NULL AUTO_INCREMENT";
 $keyID = "primary key (`id`)";
 
 function Import($sqlFile)
