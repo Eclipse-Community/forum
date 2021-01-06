@@ -11,63 +11,51 @@ $lastKnownBrowser = "Something";
 $knownBrowsers = array
 (
 	"IE" => "Internet Explorer",
-	"rekonq" => "rekonq",
+	"Trident" => "Internet Explorer",
+	"Edge" => "Microsoft Edge",
 	"OPR" => "Opera",
 	"Otter" => "Otter",
-	"Opera Tablet" => "Opera Mobile (tablet)",
-	"Opera Mobile" => "Opera Mobile",
-	"Opera Mini" => "Opera Mini", //Opera/9.80 (J2ME/MIDP; Opera Mini/4.2.18887/764; U; nl) Presto/2.4.15
-	"Nintendo Wii" => "Wii Internet Channel", //Opera/9.30 (Nintendo Wii; U; ; 3642; nl)
-	"Nintendo DSi" => "Nintendo DSi Browser", //Opera/9.50 (Nintendo DSi; Opera/507; U; en-US)
-	"Nitro" => "Nintendo DS Browser",
+	"Opera Mini" => "Opera Mini",
 	"Opera" => "Opera",
 	"Iceweasel" => "Iceweasel",
-	"MozillaDeveloperPreview" => "Firefox (Development build)",
+	"SeaMonkey" => "SeaMonkey",
+	"Mypal" => "Mypal",
+	"PaleMoon" => "Pale Moon",
 	"Firefox" => "Firefox",
-	"dwb" => "DWB",
-	"Chrome" => "Chrome",
+	"Chrome" => "Chromium",
 	"Android" => "Android",
-	"Midori" => "Midori",
 	"Safari" => "Safari",
 	"Konqueror" => "Konqueror",
-	"Mozilla" => "Mozilla",
 	"Lynx" => "Lynx",
 	"ELinks" => "ELinks",
 	"Links" => "Links",
-	"Nokia" => "Nokia mobile",
 );
 
 $knownOSes = array
 (
-	"Nintendo 3DS" => "Nintendo 3DS",
 	'iPod' => 'iPod',
 	'iPad' => 'iPad',
 	'iPhone' => 'iPhone',
-	"HTC_" => "HTC mobile",
-	"Series 60" => "S60",
-	"Nexus" => "Android (Nexus %)",
-	"Android" => "Android",
-	"Windows 4.0" => "Windows 95",
-	"Windows 4.1" => "Windows 98",
-	"Windows 4.9" => "Windows ME",
-	"Windows NT 5.0" => "Windows NT",
+	"Android" => "Android %",
+	"Windows NT 4.0" => "Windows NT 4",
+	"Windows NT 5.0" => "Windows 2000",
 	"Windows NT 5.1" => "Windows XP",
-	"Windows NT 5.2" => "Windows XP 64",
+	"Windows NT 5.2" => "Windows Server 2003",
 	"Windows NT 6.0" => "Windows Vista",
 	"Windows NT 6.1" => "Windows 7",
 	"Windows NT 6.2" => "Windows 8",
+	"Windows NT 6.3" => "Windows 8.1",
+	"Windows NT 6.4" => "Windows 10",
+	"Windows NT 10.0" => "Windows 10",
 	"Windows Mobile" => "Windows Mobile",
 	"FreeBSD" => "FreeBSD",
 	"Ubuntu" => "Ubuntu",
 	"Linux" => "GNU/Linux %",
 	"Mac OS X" => "Mac OS X %",
 	"BlackBerry" => "BlackBerry",
-	"Nintendo Wii" => "Nintendo Wii",
-	"Nitro" => "Nintendo DS",
-	"Firefox" => "Firefox OS",
 );
 
-$mobileBrowsers = array('Opera Tablet', 'Opera Mobile', 'Opera Mini', 'Nintendo DSi', 'Nitro', 'Nintendo 3DS', 'Android', 'Nokia', 'iPod', 'iPad', 'iPhone', 'Firefox OS');
+$mobileBrowsers = array('Android', 'Nokia', 'iPod', 'iPad', 'iPhone');
 $mobileLayout = false;
 
 $ua = $_SERVER['HTTP_USER_AGENT'];
@@ -82,6 +70,8 @@ foreach($knownBrowsers as $code => $name)
 		//Opera Mini wasn't detected properly because of the Opera 10 hack.
 		if ((strpos($ua, "Opera/9.80") !== FALSE && $code != "Opera Mini" || $code == "Safari") && strpos($ua, "Version/") !== FALSE)
 			$version = substr($ua, strpos($ua, "Version/") + 8);
+		
+		//TODO: Add equivalent hacks for IE10 and IE11, as well as Windows NT 5.2 ~pixieditzy
 			
 		if (in_array($code, $mobileBrowsers)) $mobileLayout = true;
 
