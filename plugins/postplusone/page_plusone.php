@@ -31,12 +31,13 @@ if($vote)
 if($loguser["powerlevel"] < 0)
 	die(__("You are banned and can't give +1's to posts."));
 
+else
+{
 Query("UPDATE {posts} SET postplusones = postplusones+1 WHERE id = {0} LIMIT 1", $pid);
 Query("UPDATE {users} SET postplusones = postplusones+1 WHERE id = {0} LIMIT 1", $post["user"]);
 Query("UPDATE {users} SET postplusonesgiven = postplusonesgiven+1 WHERE id = {0} LIMIT 1", $loguserid);
 Query("INSERT INTO {postplusones} (user, post) VALUES ({0}, {1})", $loguserid, $pid);
 $post["postplusones"]++;
+}
 
 echo formatPlusOnes($post["postplusones"]);
-
-
