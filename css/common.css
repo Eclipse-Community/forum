@@ -378,7 +378,7 @@ ul.breadcrumbs li
 }
 ul.breadcrumbs li:before
 {
-	content:"» ";
+	content:"\187 ";
 }
 
 ul.breadcrumbs li:first-child:before
