@@ -5,7 +5,7 @@ else echo '<a href="#" onclick="enableMobileLayout(-1); return false;" rel="nofo
 <br>
 <br>
 <?php $bucket = "footer"; include("./lib/pluginloader.php");?>
-Powered by <a href="https://github.com/Eclipse-Community/forum">RenBoard</a><br />
+Powered by <a href="https://github.com/Eclipse-Community/forum">EclipseBoard</a><br />
 <?php print __("<!-- English translation by The ABXD Team -->")?>
 
 <?php print (isset($footerButtons) ? $footerButtons : "")?>
