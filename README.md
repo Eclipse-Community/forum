@@ -1,4 +1,4 @@
-# EclipseForum
+# EclipseBoard
 Forum software written in PHP and MySQL, based on ABXD (an old forum system from the early-mid 2010s).
 
 Mostly intended for [Eclipse Community](https://forum.eclipse.cx/)'s message board, however it *should* theoretically work fine out of the box for your own purposes, too.
