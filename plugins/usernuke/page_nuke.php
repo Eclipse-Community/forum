@@ -1,5 +1,22 @@
 <?php
 
+// Copypaste from login.php
+function isValidPassword($password, $hash, $uid)
+{
+    if (!password_verify($password, $hash))
+        return false;
+
+    if (password_needs_rehash($hash, PASSWORD_DEFAULT))
+    {
+        $hash = password_hash($password, PASSWORD_DEFAULT);
+
+        Query('UPDATE {users} SET password = {0} WHERE id = {1}', $hash, $uid);
+    }
+
+    return true;
+}
+// End of copypaste
+
 if($loguser["powerlevel"] < 3)
 	kill("You must be an admin");
 
@@ -12,13 +29,15 @@ if(!$user)
 
 if($user["powerlevel"] > 0)
 	kill("You can't nuke a staff member. Demote him first.");
+
+if($user["powerlevel"] == 4)
+	kill("Piss off.");
 	
 $passwordFailed = false;
 
 if(isset($_POST["currpassword"]))
 {
-	$sha = doHash($_POST["currpassword"].$salt.$loguser['pss']);
-	if($loguser['password'] == $sha)
+	if (isValidPassword($pass, $user['password'], $user['id']))
 	{
 		
 		//Delete posts from threads by user
