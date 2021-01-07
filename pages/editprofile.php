@@ -306,8 +306,8 @@ if(!$editUserMode)
 	unset($account['admin']);
 }
 
-if($loguser['powerlevel'] > 0)
-	$general['avatar']['items']['picture']['hint'] = __("As a staff member, you can upload pictures of any reasonable size.");
+/*if($loguser['powerlevel'] > 0)
+	$general['avatar']['items']['picture']['hint'] = __("As a staff member, you can upload pictures of any reasonable size.");*/
 
 if($loguser['powerlevel'] == 4 && isset($account['admin']['items']['powerlevel']))
 {
@@ -611,7 +611,7 @@ function HandlePicture($field, $type, $errorname, $allowOversize = false)
 	if($type == 0)
 	{
 		$extensions = array(".png",".jpg",".jpeg",".gif");
-		$maxDim = 100;
+		$maxDim = 300;
 		$maxSize = 300 * 1024;
 	}
 	else if($type == 1)
@@ -626,8 +626,8 @@ function HandlePicture($field, $type, $errorname, $allowOversize = false)
 	$tempFile = $_FILES[$field]['tmp_name'];
 	list($width, $height, $fileType) = getimagesize($tempFile);
 
-	if ($type == 0 && ($width > 300 || $height > 300))
-		return __("That avatar is definitely too big. The avatar field is meant for an avatar, not a wallpaper.");
+	/*if ($type == 0 && ($width > 300 || $height > 300))
+		return __("That avatar is definitely too big. The avatar field is meant for an avatar, not a wallpaper.");*/
 
 	$extension = strtolower(strrchr($fileName, "."));
 	if(!in_array($extension, $extensions))
