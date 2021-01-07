@@ -72,7 +72,6 @@ echo "
 					</dl>
 				</td></tr>
 			</table>";
-}
 
 echo "</td></tr></table>";
 
