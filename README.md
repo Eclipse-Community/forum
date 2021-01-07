@@ -7,7 +7,7 @@ Mostly intended for [Eclipse Community](http://forum.eclipse.cx/)'s message boar
 *TODO*
 
 ## Why the name 'RenBoard'?
-Purely because Eclipse's branding is owned by forum admin **r3n**, so why not name it after him? Maybe it could have been more original, and/or less 'narcissistic' but hey, he doesn't work on the board software even, so...
+Purely because Eclipse's branding is owned by forum admin **R3n**, so why not name it after him? Maybe it could have been more original, and/or less 'narcissistic' but hey, he doesn't work on the board software even, so... (Sike -R3n)
 
 ## System Requirements
 * PHP 7.4 (mysqli, xml, json and gd extensions required for a base install)
