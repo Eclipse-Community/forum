@@ -377,7 +377,7 @@ function makePost($post, $type, $params=array())
 	}
 
 	if($pictureUrl)
-		$sideBarStuff .= "<img src=\"".htmlspecialchars($pictureUrl)."\" alt=\"\" />";
+		$sideBarStuff .= "<img style=\"max-width:100px;max-height:100px;\" src=\"".htmlspecialchars($pictureUrl)."\" alt=\"\" />";
 
 	$lastpost = ($poster['lastposttime'] ? timeunits(time() - $poster['lastposttime']) : "none");
 	$lastview = timeunits(time() - $poster['lastactivity']);
