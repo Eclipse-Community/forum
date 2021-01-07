@@ -19,7 +19,7 @@ if(isset($_GET['snooping']))
 {
 	if($loguser['powerlevel'] > 2)
 		$rPM = Query("select * from {pmsgs} left join {pmsgs_text} on pid = {pmsgs}.id where {pmsgs}.id = {0}", $id);
-	else
+	else if ($pm['userto'] != $loguserid)
 		Kill(__("No snooping for you."));
 }
 else
@@ -31,7 +31,7 @@ else
 	Kill(__("Unknown PM"));
 
 if($pm['drafting'] && $pm['userfrom'] != $loguserid)
-	Kill(__("Unknown PM")); //could say "PM is addresssed to you, but is being drafted", but what they hey?
+	Kill(__("This PM is still being drafted."));
 
 $rUser = Query("select * from {users} where id = {0}", $pm['userfrom']);
 if(NumRows($rUser))
@@ -54,7 +54,7 @@ else if(!isset($_GET['snooping']) && $pm['drafting'])
 		$draftEditor = true;
 }
 else if(isset($_GET['snooping']))
-	Alert(__("You are snooping."));
+	Alert(__("Snoo<b>ping as</b> usual, I see?")); // I'm sorry, I had to do it ~pixieditzy
 
 $pmtitle = htmlspecialchars($pm['title']); //sender's custom title overwrites this below, so save it here
 
