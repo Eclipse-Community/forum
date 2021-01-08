@@ -64,7 +64,7 @@ $settings = array(
 	),
 	"defaultTheme" => array (
 		"type" => "theme",
-		"default" => "eclipseflat",
+		"default" => "eclipsedark",
 		"name" => "Default Board Theme",
 	),
 	"defaultLayout" => array (
