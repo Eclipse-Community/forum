@@ -12,8 +12,7 @@ I'm uncreative as fuck.
 ## System Requirements
 * PHP 7.4 (mysqli, xml, json and gd extensions required for a base install)
 * MariaDB 10.x (STRICT_TRANS_TABLES disabled)
-* Web Server (most testing is done with Apache 2.4 on Debian) (Most testing by R3n will be done with XAMPP on NT 5.2, until something breaks with PHP 5.6 and it finally is moved to some form of Linux.)
-
+* Web Server (most testing is done with Apache 2.4 on Debian)
 
 Older PHP versions are more than likely to work due to the fact the codebase is so ancient, but bringing it up to work on modern PHP/MariaDB versions properly is a high priority.
 
