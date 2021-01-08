@@ -17,7 +17,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>ABXD installation</title>
+		<title>EclipseBoard installation</title>
 		<link rel="stylesheet" href="css/common.css" type="text/css" />
 		<link rel="stylesheet" href="themes/abxd30/style.css" type="text/css" />
 		<script src="js/jquery.js"></script>
@@ -36,24 +36,21 @@
 	<div id="body">
 	<div id="body-wrapper" style="max-width:900px">
 	<div id="main" style="padding:8px;">
-		<img src="img/logo.png" alt="ABXD" style="margin: 2em auto; display: block;" />
+		<img src="img/logo.png" alt="EclipseBoard" style="margin: 2em auto; display: block;" />
 		<table class="outline margin" id="installUI" style="display: none;">
 			<tr class="cell0">
 				<td style="max-height: 500px; height: 500px; vertical-align: top;" id="installPager">
 					<div class="page" id="page1">
-						<h3>Welcome to ABXD</h3>
+						<h3>Welcome to EclipseBoard</h3>
 						<p>
-							Welcome to the installer for ABXD.
-							We've done a few changes in 3.0 to make using ABXD even better, including:
+							Welcome to the installer for EclipseBoard.
+							IDFK waht to put here:
 							<ul>
-								<li>Large codebase cleanups &mdash; the board should now work better than ever!</li>
-								<li>A new, flexible permissions system that lets you define user groups or per-user permissions, such as forum access.</li>
-								<li>Easier theme installation for administrators</li>
-								<li>[ devs add stuff here ]</li>
+								<li>You ever just want to sleep for an entire week? Me too.</li>
 							</ul>
 						<p>
-							Thanks for using ABXD!<br />
-							- The ABXD developers
+							Thanks for using EclipseBoard!<br />
+							- The EclipseBoard developers (pixieditzy does the most work)
 					</div>
 					<div class="page" id="page2">
 						<div class="install-only sql-configured">
@@ -103,7 +100,7 @@
 										Database name
 									</td>
 									<td>
-										<input type="text" name="sqlDbName" id="sqlDbName" value="abxd" />
+										<input type="text" name="sqlDbName" id="sqlDbName" value="EclipseBoard" />
 									</td>
 								</tr>
 								<tr class="cell0">
@@ -156,7 +153,7 @@
 										<td colspan="2">
 											<p>NOTE: You can set this to the same DB as above, but then make sure to choose a unique 
 											table prefix so there will be no table name conflicts between the other forum software's 
-											and ABXD's tables.</p>
+											and EclipseBoard's tables.</p>
 											<p>Making a backup is strongly recommended!</b>
 										</td>
 									</tr>

@@ -3,22 +3,22 @@
 $settings = array(
 	"boardname" => array (
 		"type" => "text",
-		"default" => "AcmlmBoard XD",
+		"default" => "EclipseBoard",
 		"name" => "Board name"
 	),
 	"metaDescription" => array (
 		"type" => "text",
-		"default" => "AcmlmBoard XD",
+		"default" => "EclipseBoard",
 		"name" => "Meta description"
 	),
 	"metaTags" => array (
 		"type" => "text",
-		"default" => "AcmlmBoard XD abxd",
+		"default" => "EclipseBoard Eclipse Board Forum AcmlmBoard XD abxd",
 		"name" => "Meta tags"
 	),
 	"dateformat" => array (
 		"type" => "text",
-		"default" => "m-d-y, h:i a",
+		"default" => "dd/mm/yy, hh:mm:ss",
 		"name" => "Date format"
 	),
 	"customTitleThreshold" => array (
@@ -64,7 +64,7 @@ $settings = array(
 	),
 	"defaultTheme" => array (
 		"type" => "theme",
-		"default" => "abxd30",
+		"default" => "eclipseflat",
 		"name" => "Default Board Theme",
 	),
 	"defaultLayout" => array (
@@ -115,12 +115,12 @@ $settings = array(
 	),
 	"PoRATitle" => array (
 		"type" => "text",
-		"default" => "Points of Required Attention&trade;",
+		"default" => "Hey, read me bitch;",
 		"name" => "PoRA title",
-	),
+	), //Would like to rename PoRA to something else
 	"PoRAText" => array (
 		"type" => "texthtml",
-		"default" => "Welcome to your new ABXD Board!<br>First, register to get admin access.<br>Then, you can edit the board settings, forum list, this very message, and other stuff from the admin panel.<br>Enjoy ABXD!",
+		"default" => "Welcome to your new EclipseBoard Board!<br>First, register to get admin access.<br>Then, you can edit the board settings, forum list, this very message, and other stuff from the admin panel.<br>Enjoy EclipseBoard!",
 		"name" => "PoRA text",
 	),
 
@@ -128,13 +128,14 @@ $settings = array(
 		"type" => "textbbcode",
 		"default" => "This is a sample post. You [b]probably[/b] [i]already[/i] [u]know[/u] what this is for.
 
-[quote=Goomba][quote=Mario]Woohoo! [url=http://www.mariowiki.com/Super_Mushroom]That's what I needed![/url][/quote]Oh, nooo! *stomp*[/quote]
+[quote=Cunt][quote=Dumbass]Woohoo! [url=https://i.imgur.com/IhqTGdF.png]Wow I never knew I'd meet the guy online![/url][/quote]You're a fucking dumbass you donkey.[/quote]
 
 Well, what more could you [url=http://en.wikipedia.org]want to know[/url]? Perhaps how to do the classic infinite loop?
 [code]while(true){
 printf(\"Hello World!
 \");
-}[/code]",
+}[/code]
+Why am I like this?",
 		"name" => "Post Preview text"
 	),
 

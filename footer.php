@@ -6,7 +6,7 @@ else echo '<a href="#" onclick="enableMobileLayout(-1); return false;" rel="nofo
 <br>
 <?php $bucket = "footer"; include("./lib/pluginloader.php");?>
 Powered by <a href="https://github.com/Eclipse-Community/forum">EclipseBoard</a><br />
-<?php print __("<!-- English translation by The ABXD Team -->")?>
+Fork of AcmlmBoard XD<br />
 
 <?php print (isset($footerButtons) ? $footerButtons : "")?>
 <?php print (isset($footerExtensionsB) ? $footerExtensionsB : "")?>
