@@ -1,0 +1,150 @@
+/* AcmlmBoard XD - Flat Gray theme */
+
+#body {
+	background: #0b0a0d;
+	color: #E0E0E0;
+}
+
+a:link		{ color: #884ba7; font-weight: bold; }
+a:visited	{ color: #723f8c; }
+a:hover		{ color: #BD6AED;}
+a:active	{ color: #9E58C4; }
+
+table, tr, td, th, div {
+	border-width: 0px;
+	border-color: rgba(0, 0, 0, 0);
+	border-style: none;
+}
+
+table.outline, table.post {
+	border: 1px solid #723f8c;
+}
+
+.header0 th {
+	background: #0e0d11;
+}
+
+.header1 th
+{
+	background: #0e0d11;
+}
+
+.cell2 {
+	background: #17151c;
+}
+
+.cell1, table.post td.side, table.post td.userlink, table.post td.meta {
+	background: #17151c;
+}
+
+.cell0, table.post td.post, .faq {
+	background: #17151c;
+}
+
+table.post td.post {
+	border-top: 1px solid #723f8c;
+	border-left: 1px solid #723f8c;
+}
+
+.errort {
+	background: hsl(0, 0, 25%);
+}
+
+.errorc {
+	background: hsl(0, 0, 18%);;
+	border: 1px solid hsl(0, 0, 50%);
+}
+
+
+button, input[type="submit"], select, input[type="checkbox"], input[type="radio"] {
+	border: 1px solid #723f8c;
+	background-color: #1a0f20;
+	color: #E0E0E0;
+
+}
+
+select {
+	-webkit-appearance: push-button;
+	-moz-appearance: button;
+	-o-appearance: button;
+	appearance: push-button;
+}
+
+button:hover, input[type="submit"]:hover, select:hover, input[type="checkbox"]:hover, input[type="radio"]:hover {
+	background-color: #1a0f20;
+	border: 1px solid #723f8c;
+}
+
+select {
+	background-image: -webkit-linear-gradient(-45deg, hsla(0, 0%, 0%, 0), hsla(0, 0%, 0%, 0) 50%, hsl(0, 0%, 35%) 50%);
+	background-image: -moz-linear-gradient(135deg, hsla(0, 0%, 0%, 0), hsla(0, 0%, 0%, 0) 50%, hsl(0, 0%, 35%) 50%);
+	background-image: linear-gradient(135deg, hsla(0, 0%, 0%, 0), hsla(0, 0%, 0%, 0) 50%, hsl(0, 0%, 35%) 50%);
+	background-size: 16px 16px;
+	background-repeat: no-repeat;
+	background-position: bottom right;
+	padding-right: 14px;
+}
+
+select:focus {
+	outline: none;
+}
+
+option {
+	background: #ff0000;
+	color: #E0E0E0;
+}
+
+input[type="text"], input[type="password"], input[type="file"], input[type="email"], textarea {
+	background: #1a0f20;
+	border: 1px solid #723f8c;
+	color: #E0E0E0;
+}
+
+input[type="radio"] {
+	border-radius: 8px;
+}
+
+input[type="text"]:focus, input[type="password"]:focus, input[type="file"]:focus, input[type="email"]:focus, textarea:focus {
+	border-color: #723f8c;
+	outline: none;
+}
+
+div#tabs {
+	margin-bottom: 0px;
+}
+
+div#tabs button {
+	background: #1a0f20;
+	padding: 2px;
+	padding-left: 8px;
+	padding-right: 8px;
+}
+
+div#tabs button:not(:last-child) {
+	margin-right: 4px;
+}
+
+div#tabs button.selected {
+	border-bottom: 1px solid #723f8c;
+	background: #723f8c;
+}
+
+.pollbarContainer {
+	background: #17151c;
+	border-radius: 0px;
+	box-shadow: none;
+	border: none;
+}
+
+.pollbar {
+	border-radius: 0px;
+	box-shadow: none;
+	border: 0px none;
+}
+
+td.threadIcons label > input:checked ~ * {
+	background: #723f8c;
+	border-radius: 0px;
+	border: 1px solid #723f8c;
+}
+	
