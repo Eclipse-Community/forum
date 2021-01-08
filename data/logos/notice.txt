@@ -1,0 +1,6 @@
+Logos can be in PNG, GIF, or JPG format and saved as 'logo.$EXT'.
+In that order just specified, is the priority.
+
+Theme specific logos can be added here, by using logo_$THEMENAME.$EXT, these are checked before the main one if found.
+
+The more traditional method of img/logo.png and themes/$THEME/logo.png works too, but this is more flexible/reliable and requires only 1 upload/change. :p
