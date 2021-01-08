@@ -18,7 +18,7 @@ $settings = array(
 	),
 	"dateformat" => array (
 		"type" => "text",
-		"default" => "dd/mm/yy, hh:mm:ss",
+		"default" => "d/m/y, h:i",
 		"name" => "Date format"
 	),
 	"customTitleThreshold" => array (
