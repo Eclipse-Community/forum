@@ -49,7 +49,7 @@ foreach($dateformats as $format)
 foreach($timeformats as $format)
 	$timelist[$format] = ($format ? $format.' ('.cdate($format).')':'');
 
-$sexes = array(__("Male"), __("Female"), __("N/A"));
+$sexes = array(__("Male"), __("Male, but wants to be female"), __("Female"), __("Female, but wants to be male"), __("N/A"));
 $powerlevels = array(-1 => __("-1 - Banned"), __("0 - Normal user"), __("1 - Local Mod"), __("2 - Full Mod"), __("3 - Admin"));
 
 //Editprofile.php: Welcome to the Hell of Nested Arrays!
@@ -107,7 +107,7 @@ $general = array(
 			"postsperpage" => array(
 				"caption" => __("Posts per page"),
 				"type" => "number",
-				"min" => 20,
+				"min" => 25,
 				"max" => 99,
 			),
 			"dateformat" => array(
