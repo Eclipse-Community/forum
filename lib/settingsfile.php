@@ -115,7 +115,7 @@ $settings = array(
 	),
 	"PoRATitle" => array (
 		"type" => "text",
-		"default" => "Hey, read me bitch;",
+		"default" => "Hey, read me bitch!",
 		"name" => "PoRA title",
 	), //Would like to rename PoRA to something else
 	"PoRAText" => array (
