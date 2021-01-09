@@ -1,7 +1,7 @@
 /* AcmlmBoard XD - Flat Gray theme */
 
 #body {
-	background: #17151c;
+	background: #0b0a0d;
 	color: #E0E0E0;
 }
 
@@ -21,24 +21,24 @@ table.outline, table.post {
 }
 
 .header0 th {
-	background: #17151c;
+	background: #0e0d11;
 }
 
 .header1 th
 {
-	background: #17151c;
+	background: #0e0d11;
 }
 
 .cell2 {
-	background: #0b0a0d;
+	background: #17151c;
 }
 
 .cell1, table.post td.side, table.post td.userlink, table.post td.meta {
-	background: #0b0a0d;
+	background: #17151c;
 }
 
 .cell0, table.post td.post, .faq {
-	background: #0b0a0d;
+	background: #17151c;
 }
 
 table.post td.post {
@@ -130,7 +130,7 @@ div#tabs button.selected {
 }
 
 .pollbarContainer {
-	background: #0b0a0d;
+	background: #17151c;
 	border-radius: 0px;
 	box-shadow: none;
 	border: none;
