@@ -6,7 +6,7 @@
 }
 
 a:link		{ color: #884ba7; font-weight: bold; }
-a:visited	{ color: #723f8c; }
+a:visited	{ color: #67397e; }
 a:hover		{ color: #BD6AED;}
 a:active	{ color: #9E58C4; }
 
@@ -47,11 +47,11 @@ table.post td.post {
 }
 
 .errort {
-	background: hsl(0, 0, 25%);
+	background: #ff0000;
 }
 
 .errorc {
-	background: hsl(0, 0, 18%);;
+	background: #ff0000;
 	border: 1px solid hsl(0, 0, 50%);
 }
 
@@ -76,7 +76,7 @@ button:hover, input[type="submit"]:hover, select:hover, input[type="checkbox"]:h
 }
 
 select {
-	background-image: -webkit-linear-gradient(-45deg, hsla(0, 0%, 0%, 0), hsla(0, 0%, 0%, 0) 50%, hsl(0, 0%, 35%) 50%);
+	background-image: -webkit-linear-gradient(-45deg, hsla(0, 0%, 0%, 0), hsla(0, 0%, 0%, 0) 50%, hsl(0, 0%, 35%) 50%); /*Need to figure out what this shit does*/
 	background-image: -moz-linear-gradient(135deg, hsla(0, 0%, 0%, 0), hsla(0, 0%, 0%, 0) 50%, hsl(0, 0%, 35%) 50%);
 	background-image: linear-gradient(135deg, hsla(0, 0%, 0%, 0), hsla(0, 0%, 0%, 0) 50%, hsl(0, 0%, 35%) 50%);
 	background-size: 16px 16px;
