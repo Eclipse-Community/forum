@@ -1,3 +1,6 @@
+#Why is this archived?
+Pixieditzy abandoned the project, and as he's the only one with any real coding knowledge, I'm stuck with this mess that I don't know how to clean up. Eclipse Community will be switching to phpBB, which I think is a better looking board.
+
 # EclipseBoard
 Forum software written in PHP and MySQL, based on ABXD (an old forum system from the early-mid 2010s).
 
