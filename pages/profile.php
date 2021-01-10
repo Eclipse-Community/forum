@@ -175,7 +175,6 @@ else
 	$foo[__("Last post")] = __("Never");
 
 $foo[__("Last view")] = format("{0} ({1} ago)", formatdate($user['lastactivity']), TimeUnits(time() - $user['lastactivity']));
-$foo[__("Browser")] = $user['lastknownbrowser'];
 if($loguser['powerlevel'] > 0)
 	$foo[__("Last known IP")] = formatIP($user['lastip']);
 $profileParts[__("General information")] = $foo;
